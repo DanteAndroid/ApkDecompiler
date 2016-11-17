@@ -34,12 +34,13 @@ apktool d -f $APK
 echo Open directory of decompiled directory...
 open $APK_PATH/$APK_NAME
 
-echo "Change the resources you wanna edit (like the icon)."
+echo "现在修改你想改的资源，比如图标、字符串，"
+echo "修改完成后，到这里点enter来生成新的apk。"
+echo "Now change the resources you wanna edit (like the icon)."
 read -p "After edit is finished, come here type Enter to build new apk." 
 
 apktool b $APK_PATH/$APK_NAME
 echo "Start building edited apk..."
-
 read -p "
 【拖拽你的签名文件到这里，没有直接点enter】：
 Drag your keystore to sign the apk, if you don't have one just enter:
@@ -54,8 +55,10 @@ Enter your alias of keystore:" ALIAS
 	else 
 		keytool -genkeypair -alias "test" -keyalg "RSA" -keystore "key.jks" 
 		echo Start signing apk...
+		echo $APK_PATH/key.jks 
 		jarsigner -keystore $APK_PATH/key.jks -signedjar $APK_PATH/signed.apk $APK_PATH/$APK_NAME/dist/$APK_NAME.apk "test"
-		echo Mission finished.
+		echo 任务完成。修改后的apk名为signed.apk
+		echo Mission finished. The edited apk is signed.apk.
 	fi
 
 
