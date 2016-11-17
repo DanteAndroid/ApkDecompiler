@@ -2,7 +2,8 @@
 A script to decompile apk easily. 一个让你轻松反编译apk的脚本（只支持mac系统）
 
 ## 可以干嘛？What can it do?
-可以通过反编译，修改apk资源如图标、启动图、app名称以及其他你可以修改的东西，并且生成新的签名的apk。（汉化apk就是这么做的）
+可以通过反编译，修改apk资源如图标、app名称、Manifest以及其他你可以修改的东西，并且生成新的签名的apk。（汉化apk就是这么做的）
+By compiling the apk, you can change resouces like icon, app name, Manifest and something else you can literally change, and it automatically generate new signed apk for you.
 
 ## 如何使用？How to use?
 1. 确保你安装了java环境（虽然我认为你如果没安装也不会进来的）
