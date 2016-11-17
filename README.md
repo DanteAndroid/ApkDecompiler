@@ -6,11 +6,11 @@ A script to decompile apk easily. 一个让你轻松反编译apk的脚本
 
 ## 如何使用？How to use?
 1. 确保你安装了java环境（虽然我认为你如果没安装也不会进来的）
+Java Environment required.
 2. 确保安装了apktool（通过在终端输入apktool来验证，没安装请到[这里](https://ibotpeaches.github.io/Apktool/)，如果你发现你不会安装，请放弃使用此工具。）
+Apktool installed. 
 3. 下载脚本，赋予权限($ chmod 777 脚本文件路径)。
+Download the script and grant it with permissions.
 4. 打开终端，拖拽脚本并点击enter。
-
-1. Java Environment required.
-2. Apktool installed. [Check it](https://ibotpeaches.github.io/Apktool/)
-3. Download the script and grant it with permissions.
-4. Drag your script to Terminal and Enter!
+Drag your script to Terminal and Enter!
+ 
