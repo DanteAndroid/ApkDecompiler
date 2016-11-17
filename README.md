@@ -1,5 +1,5 @@
 # ApkDecompiler
-A script to decompile apk easily. 一个让你轻松反编译apk的脚本
+A script to decompile apk easily. 一个让你轻松反编译apk的脚本（只支持mac系统）
 
 ## 可以干嘛？What can it do?
 可以通过反编译，修改apk资源如图标、启动图、app名称以及其他你可以修改的东西，并且生成新的签名的apk。（汉化apk就是这么做的）
